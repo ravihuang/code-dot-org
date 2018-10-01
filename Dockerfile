@@ -8,6 +8,7 @@ RUN apt-get update && \
             libjpeg8-dev libpango1.0-dev libgif-dev curl pdftk enscript libsqlite3-dev phantomjs build-essential redis-server rbenv npm && \
     curl -fsSL https://deb.nodesource.com/setup_6.x | bash - && \
     apt-get install -y nodejs && \
+    git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build && \
     rbenv install 2.5.0 && \
     rbenv global 2.5.0 && \
     rbenv rehash && \
