@@ -3,7 +3,7 @@ FROM ubuntu:16.04
 USER root
 
 RUN apt-get update && \
-    apt-get install -y git mysql-server mysql-client libmysqlclient-dev libxslt1-dev libssl-dev \
+    apt-get install -y git mysql-client libmysqlclient-dev libxslt1-dev libssl-dev \
             zlib1g-dev imagemagick libmagickcore-dev libmagickwand-dev openjdk-9-jre-headless libcairo2-dev \
             libjpeg8-dev libpango1.0-dev libgif-dev curl pdftk enscript libsqlite3-dev phantomjs build-essential redis-server rbenv npm && \
     curl -fsSL https://deb.nodesource.com/setup_6.x | sudo -E bash - && \
