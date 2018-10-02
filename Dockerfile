@@ -19,7 +19,7 @@ FROM ravihuang/code-dot-org:tmp
 #    apt-get update && apt-get install -y yarn=1.6.0-1
 
 RUN rm -f /usr/bin/ruby && ln -s /root/.rbenv/versions/2.5.0/bin/ruby /usr/bin/ruby && \
-    git clone https://github.com/code-dot-org/code-dot-org.git && \
+#    git clone https://github.com/code-dot-org/code-dot-org.git && \
     gem install bundler && \
     rbenv rehash && \
     cd code-dot-org && \
